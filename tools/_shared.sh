@@ -20,7 +20,7 @@ TOOLS_ROOT=`pwd`
 if [ "${1}" == "cURL" ]; then
    ANDROID_API=${ANDROID_API:-21}
 else
-   ANDROID_API=${ANDROID_API:-16}
+   ANDROID_API=${ANDROID_API:-21}
 fi
 #ARCHS=("android" "android-armeabi" "android-x86" "android-mips")
 #ABIS=("armeabi" "armeabi-v7a" "x86" "mips")
