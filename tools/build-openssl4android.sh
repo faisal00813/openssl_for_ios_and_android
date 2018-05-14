@@ -16,7 +16,7 @@
 
 set -u
 
-source ./_shared.sh openssl
+source ./_shared.sh openssl $2
 
 # Setup architectures, library name and other vars + cleanup from previous runs
 LIB_NAME="openssl-1.1.0f"

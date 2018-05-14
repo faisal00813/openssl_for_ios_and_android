@@ -16,7 +16,7 @@
 
 set -u
 
-source ./_shared.sh cURL
+source ./_shared.sh cURL $2
 
 # Setup architectures, library name and other vars + cleanup from previous runs
 TOOLS_ROOT=`pwd`
