@@ -17,11 +17,12 @@ TOOLS_ROOT=`pwd`
 # But but but cURL could not build by android-20 and earlier :-(
 # So you can build openssl with android-16 then build cURL with android-21
 #
-if [ "${1}" == "cURL" ]; then
-   ANDROID_API=${ANDROID_API:-21}
-else
-   ANDROID_API=${ANDROID_API:-21}
-fi
+#if [ "${1}" == "cURL" ]; then
+#   ANDROID_API=${ANDROID_API:-21}
+#else
+#   ANDROID_API=${ANDROID_API:-21}
+#fi
+ANDROID_API=$2
 #ARCHS=("android" "android-armeabi" "android-x86" "android-mips")
 #ABIS=("armeabi" "armeabi-v7a" "x86" "mips")
 #ANDROID_API=${ANDROID_API:-21}	# for curl
