@@ -46,7 +46,7 @@ configure_make() {
   #removes the -mandroid flag so that clang can build
   sed -e "s/\-mandroid//g" -i .backup Configurations/10-main.conf
 
-  ./Configure $ARCH \
+  ./Configure $ARCH shared \
               --prefix=${LIB_DEST_DIR}/${ABI} \
               --with-zlib-include=$SYSROOT/usr/include \
               --with-zlib-lib=$SYSROOT/usr/lib \
