@@ -70,6 +70,8 @@ configure_make() {
     [ -d ${OUTPUT_ROOT}/lib ] || mkdir -p ${OUTPUT_ROOT}/lib
     cp ${LIB_DEST_DIR}/${ABI}/lib/libcrypto.a ${OUTPUT_ROOT}/lib
     cp ${LIB_DEST_DIR}/${ABI}/lib/libssl.a ${OUTPUT_ROOT}/lib
+    cp -L ${LIB_DEST_DIR}/${ABI}/lib/libcrypto.so ${OUTPUT_ROOT}/lib
+    cp -L ${LIB_DEST_DIR}/${ABI}/lib/libssl.so ${OUTPUT_ROOT}/lib
   fi;
   popd
 
